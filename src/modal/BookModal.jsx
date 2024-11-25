@@ -69,9 +69,13 @@ function BookModal({ isBookModalOpen, selectedBook, handleAddToCart, selectItems
                                     <span className="text-yellow-600">{selectedBook.author}</span>
                     
                                     {/* <div className="text-sm md:text-base mb-4">{selectedBook.description || 'No description available.'}</div> */}
-                                    <div className="grid grid-cols-2">
-                                        <div className="text-pink-400 pr-6">{selectedBook.description}</div> 
-                                         <div>
+                                  
+                                  
+                                  
+                                    {/* <div className="grid grid-cols-2">
+                                        <div className="text-pink-400 hidden sm:block md:pr-6">{selectedBook.description}</div> 
+                                   
+                                         <div className="text-start mx-auto items-center sm:mx-0">
                                          <p className="text-green-400">Buyer- US POLO</p>
                                           <p className="text-red-400"> Item- Men's polo shirt </p>
                                           <p className="text-purple-400">Size- S-XXL</p>
@@ -82,7 +86,33 @@ function BookModal({ isBookModalOpen, selectedBook, handleAddToCart, selectItems
                                           <p className="text-teal-400">Only wholesale...</p>
                                           <p className="">💯❤‍🩹</p>
                                          </div>                                    
-                                    </div>
+                                    </div> */}
+<div className="grid grid-cols-2">
+  <div className="text-pink-400 hidden sm:block md:pr-6">
+    {selectedBook.description}
+  </div>
+  {/* This is the item of category */}
+  <div className="text-start mx-auto items-center col-span-2 sm:col-span-1 sm:mx-0">
+    <p className="text-green-400">Buyer- US POLO</p>
+    <p className="text-red-400">Item- Men's polo shirt</p>
+    <p className="text-purple-400">Size- S-XXL</p>
+    <p className="text-pink-400">100% export</p>
+    <p className="text-green-400">100% qc allowed</p>
+    <p className="text-amber-400">Product and intact...</p>
+    <p className="text-lime-400">In my house...</p>
+    <p className="text-teal-400">Only wholesale...</p>
+    <p className="">💯❤‍🩹</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
                                     {/* Button Area */}
                                     <div className="flex flex-col sm:flex-row justify-center sm:justify-start mt-2 space-y-2 sm:space-y-0 sm:space-x-2">
