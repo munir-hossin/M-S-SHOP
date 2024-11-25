@@ -45,7 +45,7 @@ function BookModal({ isBookModalOpen, selectedBook, handleAddToCart, selectItems
                         open
                     >
                         <div className="w-full max-w-4xl px-2 md:px-5">
-                            <div className="flex flex-col md:flex-row text-gray-300 bg-[#1e293b] lg:h-[400px] rounded-2xl items-center">
+                            <div className="flex flex-col md:flex-row text-gray-300 dark:bg-slate-600 bg-[#1e293b] lg:h-[400px] rounded-2xl items-center">
                                 {/* Book Image with Zoom and Panning */}
                                 <div
                                     className="order-1 lg:order-12 pt-5 md:p-0 w-full md:w-1/2 lg:w-1/3 lg:h-[400px] relative overflow-hidden"
@@ -64,11 +64,25 @@ function BookModal({ isBookModalOpen, selectedBook, handleAddToCart, selectItems
                                 </div>
 
                                 {/* Book Details */}
-                                <div className="w-full lg:w-[67%] px-3 py-4 md:py-6 md:space-y-4 order-2 lg:order-1 text-center md:text-start">
-                                    <h2 className="text-2xl md:text-3xl font-bold mb-2">{selectedBook.name || 'Unknown Title'}</h2>
-                                    <span className="block mb-2">{selectedBook.author}</span>
+                                <div className="w-full lg:w-[67%] px-3 py- md:py-6 order-2 lg:order-1 text-center md:text-start">
+                                    <h2 className="text-xl md:text-xl text font-bold">{selectedBook.name || 'Unknown Title'}</h2>
+                                    <span className="text-yellow-600">{selectedBook.author}</span>
                     
-                                    <p className="text-sm md:text-base mb-4">{selectedBook.description || 'No description available.'}</p>
+                                    {/* <div className="text-sm md:text-base mb-4">{selectedBook.description || 'No description available.'}</div> */}
+                                    <div className="grid grid-cols-2">
+                                        <div className="text-pink-400 pr-6">{selectedBook.description}</div> 
+                                         <div>
+                                         <p className="text-green-400">Buyer- US POLO</p>
+                                          <p className="text-red-400"> Item- Men's polo shirt </p>
+                                          <p className="text-purple-400">Size- S-XXL</p>
+                                          <p className="text-pink-400">100% export </p>
+                                          <p className="text-green-400">100% qc allowed</p>
+                                          <p className="text-amber-400 ">product and intact...</p>
+                                          <p className="text-lime-400">In my house...</p>
+                                          <p className="text-teal-400">Only wholesale...</p>
+                                          <p className="">💯❤‍🩹</p>
+                                         </div>                                    
+                                    </div>
 
                                     {/* Button Area */}
                                     <div className="flex flex-col sm:flex-row justify-center sm:justify-start mt-2 space-y-2 sm:space-y-0 sm:space-x-2">

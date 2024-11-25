@@ -143,7 +143,7 @@ function Components() {
             />
 
             <div>
-                <div className="h-screen flex">
+                <div className="h-screen flex ">
                     {/* **********************left ******************* */}
                     <LeftSidebar
                         setIsSearchModalOpen={setIsSearchModalOpen}

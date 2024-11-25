@@ -16,7 +16,7 @@ function GalleryItem({ onOpen, gallery, onAdd, selectItems, cartItems, handleHea
                 <div className="relative group">
                     <img src={gallery.image} alt="Book Cover" className="w-full object-cover rounded" />
                     <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity duration-300 rounded">
-                    <MdOutlineViewInAr className="text-white text-5xl mx-auto mt-32" />
+                    <MdOutlineViewInAr className="text-white text-5xl mx-auto mt-24" />
                     <span className="text-xl block mt-auto text-white text-center">View Details</span>
                     </div>
                 </div>
